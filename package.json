@@ -1,0 +1,35 @@
+{
+  "name": "boat1",
+  "version": "1.0.0",
+  "description": "boat1 is a mysterious bot with many possibilities open to it's users, explore it!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J0033/boat1.git"
+  },
+  "author": "Joe Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/J0033/boat1/issues"
+  },
+  "homepage": "https://github.com/J0033/boat1s#readme",
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "beautify": "0.0.8",
+    "canvas": "^2.3.1",
+    "discord-graf": "^0.15.4",
+    "discord.js": "^11.4.2",
+    "firebase-admin": "^7.0.0",
+    "fs": "0.0.1-security",
+    "ms": "^2.1.1",
+    "mysql": "^2.16.0",
+    "parse-duration": "^0.1.1",
+    "random-puppy": "^1.1.0",
+    "superagent": "^4.1.0",
+    "translate": "^1.0.3",
+    "utf8": "^3.0.0"
+  }
+}

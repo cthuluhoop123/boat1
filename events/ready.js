@@ -1,6 +1,6 @@
 module.exports = async bot => {
-    bot.user.setActivity("Work in prog... Loading!", {
-        type: "LISTENING"
+    bot.user.setActivity("Underdogs | NEW UPDATES SOON", {
+        type: "WATCHING"
     });
 
     /*
@@ -69,7 +69,7 @@ module.exports = async bot => {
     const {
         get
     } = require("snekfetch");
-    await get(`http://artii.herokuapp.com/make?text=STAN++IS++READY&font=big`).then(res => {
+    await get(`http://artii.herokuapp.com/make?text=UD++IS++READY&font=big`).then(res => {
         console.log(res.body.toString())
     });
     const Discord = require('discord.js');
@@ -81,11 +81,11 @@ module.exports = async bot => {
     };
     var event = new Date();
     let embed = new Discord.RichEmbed()
-        .setAuthor('Stan is Ready!', 'https://img.icons8.com/cotton/2x/checkmark.png')
+        .setAuthor('UD is Ready!', 'https://img.icons8.com/cotton/2x/checkmark.png')
         .setColor('0x659EC7')
         .setThumbnail(bot.user.displayAvatarURL)
         .setFooter(event.toLocaleDateString('eng-GB', options))
         .setDescription(`**Users:** ${bot.users.size}\n**Servers:** ${bot.guilds.size}\n${bot.guilds.map(x => "° "+ x.name).join("\n")}\n\n**Channels:** ${bot.channels.size}\n**Commands:** ${bot.commands.map(x => x.command).length}`)
 
-    bot.channels.get("534784377784369192").send(embed)
+    bot.channels.get("546679905145061376").send(embed)
 };

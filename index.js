@@ -283,11 +283,11 @@ bot.on("message", async message => {
        --------------------------------------------------------------------------------------------------
     */
 
-    let prefixes = ['stan. ', 'stan ', '>', `<@${bot.user.id}> `];
+    let prefixes = ['ud. ', 'ud!', '>', `<@${bot.user.id}> `];
     if (message.author.id === ("208688963936845824")) {
-        prefixes = ['stan. ', 'stan ', '>', `<@${bot.user.id}> `, 'dev.'];
+        prefixes = ['ud. ', 'ud!', '>', `<@${bot.user.id}> `, 'dev.'];
     } else {
-        prefixes = ['stan. ', 'stan ', '>', `<@${bot.user.id}> `];
+        prefixes = ['ud. ', 'ud!', '>', `<@${bot.user.id}> `];
     }
     let prefix = false;
     for (const thisPrefix of prefixes) {
@@ -327,11 +327,11 @@ bot.on("message", async message => {
             .setDescription(`<@${message.author.id}> used \`${command.command.name}\` in <#${message.channel.id}>`)
             .setColor("#76EE00")
         if (message.author.id == JoeID) {
-            bot.channels.get("532942584625233940").send(CommandUsedEm).then((msg) => {
+            bot.channels.get("546679905145061376").send(CommandUsedEm).then((msg) => {
                 msg.delete(10000)
             })
         } else {
-            bot.channels.get("532942584625233940").send(CommandUsedEm)
+            bot.channels.get("546679905145061376").send(CommandUsedEm)
         }
 
 
@@ -349,7 +349,7 @@ bot.on("message", async message => {
                                         LOGGING IN                                                 
    --------------------------------------------------------------------------------------------------
 */
-bot.on("guildMemberAdd", async member => {
+/*bot.on("guildMemberAdd", async member => {
     let unvRole = member.guild.roles.find(x => x.name == "Unverified");
     if (!unvRole) {
         try {
@@ -397,14 +397,14 @@ bot.on("guildMemberAdd", async member => {
             .setDescription(`**Account created at: ${member.user.createdAt.toLocaleDateString('eng-GB', options)}**\nJoin Position: ${member.guild.members.size}`)
         member.guild.channels.find(x => x.name == "s-logs").send(UserJoinEm)
 
-
+/*
 
         /* --------------------------------------------------------------------------------------------------
                                         AUTO ROLE                                                 
              --------------------------------------------------------------------------------------------------
         */
 
-        let UserRole = member.guild.roles.find(cr => cr.name == "User");
+ /*       let UserRole = member.guild.roles.find(cr => cr.name == "User");
         if (!UserRole) return;
         member.addRole(UserRole)
         let AutoRoleEm = new Discord.RichEmbed()
@@ -456,7 +456,7 @@ bot.on("guildCreate", (guild) => {
 
 })
 
-
+*/
 /* --------------------------------------------------------------------------------------------------
                                         LOGGING IN                                                 
    --------------------------------------------------------------------------------------------------

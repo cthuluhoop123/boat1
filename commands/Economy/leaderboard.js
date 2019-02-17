@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
         let embed = new Discord.RichEmbed()
             .setAuthor(`${message.guild.name} XP Leaderboard`, message.guild.iconURL)
             .setColor('RANDOM')
-            .setDescription("**Top ten active users:** \n\n" + docs.docs.map(x => `\`${count +=1})\` **${message.guild.users.get(x.data().UserID).tag} - ${x.data().xp}XP (Level ${x.data().level})**`).join("\n"))
+            .setDescription("**Top ten active users:** \n\n" + docs.docs.map(x => `\`${count +=1})\` **${message.guild.members.get(x.data().UserID).tag} - ${x.data().xp}XP (Level ${x.data().level})**`).join("\n"))
 
             .setThumbnail(bot.user.displayAvatarURL)
         return message.channel.send(embed)
